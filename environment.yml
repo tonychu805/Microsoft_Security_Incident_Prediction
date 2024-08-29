@@ -1,0 +1,10 @@
+name: msip-env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - tensorflow
+prefix: /opt/anaconda3/envs/msip-env
