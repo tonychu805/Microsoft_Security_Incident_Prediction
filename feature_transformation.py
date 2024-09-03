@@ -1,5 +1,6 @@
 from category_encoders import TargetEncoder
-
+from sklearn.preprocessing import StandardScaler
+import numpy as np
 
 def target_encode(df, n_bins):
     """
@@ -39,3 +40,11 @@ def target_encode(df, n_bins):
         df_encoded[column] = df_encoded[column].apply(lambda x: np.abs(hash(str(x))) % n_bins)
     
     return df_encoded
+
+
+def scale_data(X_train, X_test):
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+
+    return X_train_scaled, X_test_scaled
