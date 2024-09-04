@@ -1,10 +1,8 @@
 # Incident Analysis with TensorFlow
 
-### Data
+This repository is meant for the [Kaggle project - Microsoft Security Incidnet Prediction](https://www.kaggle.com/datasets/Microsoft/microsoft-security-incident-prediction) project.
 
-This repository is dedicated to the [Kaggle project - Microsoft Security Incidnet Prediction](https://www.kaggle.com/datasets/Microsoft/microsoft-security-incident-prediction).
-
-Table of Contents:
+### Table of Contents:
 
 	1.	Project Overview
 	2.	Dataset Description
@@ -21,41 +19,41 @@ Table of Contents:
 	13.	License
 	14.	Acknowledgments
 
-Project Overview:
+### Project Overview:
 
 Microsoft is challenging the data science community to develop innovative methods for predicting significant cybersecurity incidents. GUIDE, the largest publicly available dataset of real-world cybersecurity incidents, offers researchers and practitioners the opportunity to experiment with authentic data, pushing the boundaries of cybersecurity advancements. This comprehensive dataset includes over 13 million evidence points spanning 33 entity types, covering 1.6 million alerts and 1 million annotated incidents, complete with triage labels from customers over a two-week period. With the release of GUIDE, the goal is to establish a standardized benchmark for guided response systems using real-world data. The dataset’s primary aim is to accurately predict incident triage outcomes—true positive (TP), benign positive (BP), and false positive (FP)—based on historical customer responses.
 
 The repository contains a Jupyter notebook (incident_analysis.ipynb), as well as python scripts that provide a comprehensive guide to analyzing Microsoft's security incident dataset using various machine learning techniques. The notebook covers data preprocessing, model development, cross-validation, and evaluation, providing a step-by-step approach to building robust predictive models.
 
-Dataset Description
+### Dataset Description
 
 The dataset is split into two parts:
 
-	Raw data from [Kaggle](https://www.kaggle.com/datasets/Microsoft/microsoft-security-incident-prediction/data):
-    •	GUIDE_Train.csv: Used for training the model.
-    •	GUIDE_Test.csv: Used for evaluating the model’s performance.
+Raw data from [Kaggle](https://www.kaggle.com/datasets/Microsoft/microsoft-security-incident-prediction/data):
+- GUIDE_Train.csv: Used for training the model.
+- GUIDE_Test.csv: Used for evaluating the model’s performance.
 
-Repository Structure
+### Repository Structure
 
-1. Environment Setup
+Environment Setup
 
-    1. Ensure [Anaconda](https://www.anaconda.com/download/) is installed
+1. Ensure [Anaconda](https://www.anaconda.com/download/) is installed
 
-        conda --version
+    conda --version
 
-    2. Locate / download the enviroment.yml file
+2. Locate / download the enviroment.yml file
 
-    3. Create the conda environment from the .yml file:
+3. Create the conda environment from the .yml file:
 
-        conda env create -f environment.yml
+    conda env create -f environment.yml
 
-    4. Activate the new environment (the name is defined under the name field in the .yml file)
+4. Activate the new environment (the name is defined under the name field in the .yml file)
 
-        conda activate your_env_name
+    conda activate your_env_name
 
-    5. Verify the installation
+5. Verify the installation
 
-        conda env list
+    conda env list
 
 
 
