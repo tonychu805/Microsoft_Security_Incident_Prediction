@@ -65,7 +65,7 @@ Cross Validation (5 folds):
 -   CatBoost is a strong alternative that balances high accuracy and low variability.
 -   RandomForest and GradientBoost could be considered for specific scenarios, but they are less suited for tasks requiring a balance between high precision and recall.
 
-###Acknowledgements
+### Acknowledgements
 
 This dataset is hosted by Microsoft Security AI Research.
 
